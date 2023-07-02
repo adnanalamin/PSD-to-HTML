@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>responsive navbar</title>
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar">
+		<h1 class="logo">ADVENTURE</h1>
+		<ul class="nav-links">
+			<li class="active"><a href="#"></a>Home</li>
+			<li><a href="#"></a>Tours</li>
+			<li><a href="#"></a>Explore</li>
+			<li><a href="#"></a>About</li>
+			<li class="ctn"><a href="#"></a>Contact</li>
+		</ul>
+		<img src="img/menu-btn.png" alt="" class="menu-btn">
+	</nav>
+	<header>
+		<div class="header-content">
+			<h2>Explore the color full world</h2>
+			<div class="line"></div>
+			<h1>WONDERFUL GIFT</h1>
+			<a href="#" class="ctn">Learn more</a>
+		</div>
+	</header>
+
+	<!-- Event Section -->
+	<section class="events">
+		<div class="title">
+			<h1>Upcoming Event</h1>
+			<div class="line"></div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img src="img/img1.png" alt="">
+				<h4>Lorem Ipsum is simply</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+				<a href="#" class="ctn">Learn More..</a>
+			</div>
+			<div class="col">
+				<img src="img/img2.png" alt="">
+				<h4>Lorem Ipsum is simply</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+				<a href="#" class="ctn">Learn More..</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="explore">
+		<div class="explore-content">
+			<h1>Lorem Ipsum is simply</h1>
+			<div class="line"></div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 	industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and </p>
+			<a href="#" class="ctn">Learn More..</a>
+		</div>
+	</section>
+	<section class="tours">
+		<div class="row">
+			<div class="col content-col">
+				<h1>Lorem Ipsum is simply dummy text</h1>
+				<div class="line"></div>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+				<a href="#" class="ctn">Learn More..</a>
+			</div>
+			<div class="col image-col">
+				<div class="image-gallery">
+					<img src="img/img3.png" alt="">
+					<img src="img/img4.png" alt="">
+					<img src="img/img5.png" alt="">
+					<img src="img/img6.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatibus?</p>
+		<p>Lorem ipsum dolor sit amet consectetur.</p>
+	</section>
+	
+	
+
+	<script>
+		const menuBtn = document.querySelector('.menu-btn')
+		const navLinks = document.querySelector('.nav-links')
+
+		menuBtn.addEventListener('click',()=>{
+			navLinks.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
+</html>
